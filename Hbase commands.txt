@@ -1,0 +1,8 @@
+scan 'users', {LIMIT => 5}
+
+
+
+scan 'users', {COLUMNS => 'userinfo:age', FILTER => "ValueFilter(=,'binary:23')"}
+
+
+
